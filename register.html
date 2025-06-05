@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - BuildConnectKE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styles for form clarity */
+        main {
+            padding: 2rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .form-group button:hover {
+            background: #555;
+        }
+        .auth-links {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .auth-links a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" style="color: #fff; text-decoration: none;">BuildConnectKE</a></h1>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <ul class="auth-nav">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Create Your Account</h2>
+        <form action="#" method="POST"> <!-- Action will be updated with backend endpoint -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="userType">I am a:</label>
+                <select id="userType" name="userType">
+                    <option value="customer">Customer (Looking for services)</option>
+                    <option value="service_provider">Service Provider (Offering services)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        <div class="auth-links">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+            <p>Registered? <a href="customer-dashboard.html">Go to Customer Dashboard</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BuildConnectKE. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - BuildConnectKE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" style="color: #fff; text-decoration: none;">BuildConnectKE</a></h1>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <ul class="auth-nav">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-tasks"></i> My Projects</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-wallet"></i> Payments</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-comments"></i> Messages</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-history"></i> History</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="dashboard-header">
+                <h2>Welcome Back, Customer!</h2>
+                <div class="quick-actions">
+                    <button class="action-btn"><i class="fas fa-plus"></i> New Project</button>
+                    <button class="action-btn"><i class="fas fa-search"></i> Find Services</button>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Statistics Cards -->
+                <div class="stat-card">
+                    <i class="fas fa-tasks"></i>
+                    <div class="stat-info">
+                        <h3>Active Projects</h3>
+                        <p>3</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user"></i>
+                    <div class="stat-info">
+                        <h3>Preferred Contractors</h3>
+                        <p>5</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-info">
+                        <h3>Completed Projects</h3>
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-wallet"></i>
+                    <div class="stat-info">
+                        <h3>Current Budget</h3>
+                        <p>KES 50,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Projects Section -->
+            <section class="recent-projects">
+                <h3>Recent Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4>House Renovation</h4>
+                            <span class="status active">In Progress</span>
+                        </div>
+                        <p>Renovation of 3-bedroom house in Nairobi</p>
+                        <div class="project-footer">
+                            <span class="budget">Budget: KES 150,000</span>
+                            <span class="deadline">Deadline: 2025-07-15</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4>Office Fitout</h4>
+                            <span class="status completed">Completed</span>
+                        </div>
+                        <p>Office interior design and fitout</p>
+                        <div class="project-footer">
+                            <span class="budget">Budget: KES 200,000</span>
+                            <span class="deadline">Completed: 2025-05-30</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4>Plumbing Repair</h4>
+                            <span class="status pending">Pending</span>
+                        </div>
+                        <p>Emergency plumbing repairs</p>
+                        <div class="project-footer">
+                            <span class="budget">Budget: KES 30,000</span>
+                            <span class="deadline">Deadline: 2025-06-10</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notifications Section -->
+            <section class="notifications">
+                <h3>Notifications</h3>
+                <div class="notifications-list">
+                    <div class="notification-item">
+                        <i class="fas fa-bell"></i>
+                        <div class="notification-content">
+                            <p>New quote received for plumbing repair</p>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <i class="fas fa-comment"></i>
+                        <div class="notification-content">
+                            <p>Contractor has updated project status</p>
+                            <span class="time">5 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="notification-content">
+                            <p>Payment confirmation received</p>
+                            <span class="time">1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h2>BuildConnectKE</h2>
+                        <p>Connecting Construction Needs with Trusted Professionals</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Desk</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy & Data Protection Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +254 795 501538</p>
+                    <p>Email: info@buildconnectke.co.ke</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">X</a>
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">LinkedIn</a>
+                        <a href="#" class="social-icon">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BuildConnectKE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
