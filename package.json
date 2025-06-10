@@ -1,0 +1,9 @@
+{
+  "name": "build-connect-ke",
+  "version": "1.0.0",
+  "description": "BuildConnectKE - Construction Services Platform",
+  "scripts": {
+    "dev": "npx serve",
+    "build": "echo 'Static site - no build needed'"
+  }
+}
