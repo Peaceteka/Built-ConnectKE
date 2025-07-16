@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npx serve",
     "dev": "npx serve",
-    "build": "npm run lint",
+    "build": "npm run lint && cp -r . /vercel/path0",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
